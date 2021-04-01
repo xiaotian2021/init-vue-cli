@@ -2,7 +2,7 @@
 
 ## 项目技术栈
 
-```vue
+```
 /**
  * 1、获取用户输入命令
  * a、原生获取命令行  console.log(process.argv)
@@ -15,7 +15,31 @@
  * h、logSymbols  成功、失败符号
  * */
 ```
-
+```json
+{
+  "name": "init-vue-cli", // 要传到npm 的脚手架名称
+  "version": "1.0.2", // 版本号，每次上传都需要更新
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "init-vue": "index.js"
+  },
+  "dependencies": {
+    "commander": "^7.2.0",
+    "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.0.0",
+    "ora": "^5.4.0",
+    "chalk": "^4.1.0"
+  }
+}
+```
 ## 项目运行
 
 ```bash
