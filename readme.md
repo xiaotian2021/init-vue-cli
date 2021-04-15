@@ -43,6 +43,13 @@
 ## 项目运行
 
 ```bash
+# 本地开发脚手架运行
+node index.js
+npm link 'init-vue-cli'
+## 开发完成 
+npm login登录操作
+npm publish
+
 # 安转全局依赖
 npm install -g init-vue-cli
 ```
